@@ -1,0 +1,37 @@
+[project]
+name = "erasmos"
+version = "0.0.1"
+
+dependencies = [
+    "pydantic>=2.11.7",
+    "mistletoe",
+    "gTTS",
+    "python-ffmpeg",
+]
+
+[project.optional-dependencies]
+# Per installare il supporto API: pip install .[api]
+api = [
+    "fastapi>=0.116.1",
+    "uvicorn[standard]",
+    "python-multipart",
+]
+
+# Per installare il supporto CLI: pip install .[cli]
+cli = [
+    "click>=8.0",
+]
+
+# Per installare tutto: pip install .[api,cli]
+all = [
+    "erasmos[api]",
+    "erasmos[cli]",
+]
+
+[tool.setuptools.packages.find]
+include = ["erasmos*"]
+exclude = ["tmp*", "output*", "build*"]
+
+[project.scripts]
+erasmos = "erasmos.cli.main:cli"
+erasmos-server = "erasmos.api.main:start"

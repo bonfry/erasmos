@@ -1,0 +1,9 @@
+build/
+.vscode/
+*.mp3
+tmp/
+output/
+__pycache__/
+*egg-info/
+experimental/
+examples/
