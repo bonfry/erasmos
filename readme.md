@@ -3,60 +3,63 @@
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/bonfry/doc_podaster)](https://github.com/bonfry/doc_podaster/releases/latest)
 [![GitHub license](https://img.shields.io/github/license/bonfry/doc_podaster)](https://github.com/bonfry/doc_podaster/blob/main/LICENSE)
 [![GitHub last commit](https://img.shields.io/github/last-commit/bonfry/doc_podaster)](https://github.com/bonfry/doc_podaster/commits/main)
+This project allows you to transform documents into listenable audio tracks. The project is designed to integrate various approaches for document analysis and audio conversion.
 
-Questo progetto consente di trasformare i documenti in tracce audio da ascoltare. Il progetto è pensato per integrare diversi approcci per l'analisi del documento e la sua trasformazione in audio.
+## Installation
 
-## Installazione
-
-Scaricare il repository
+Clone the repository
 
 ```bash
-git clone https:// 
-``` 
+git clone https://github.com/bonfry/doc_podaster.git
+```
 
-Installare il progetto python
+Install the Python project
 
 ```bash
 cd erasmos
 pip install .[cli] # only cli dependencies
 pip install .[api] # only api dependencies
 pip install .[all] # all dependencies
-``` 
+```
 
 ## CLI
 
-Puoi ottenere la preview del documento analizzato
+You can get a preview of the parsed document
 
 ```bash
 erasmos preview <FILENAME>
 ```
 
-Oppure convertirlo in file mp3 nello stesso path del file di input
+Or convert it to an mp3 file in the same path as the input file
 
 ```bash
 erasmos convert <FILENAME>
 ```
 
 ## HTTP Server
-E' possibile avviare il server di FastAPI 
+
+You can start the FastAPI server
+
 ```bash
 erasmos-server
 ```
 
-Le api web presentano i seguenti endpoint: 
-- `/document/preview`: per effettuare la preview delle api
+The web APIs expose the following endpoints:
 
-- `/document/convert`: per convertire il documento in audio
+- `/document/preview`: to preview the document
+- `/document/convert`: to convert the document to audio
 
 ## Roadmap
 
-Al momento il progetto è in una versione preliminare semplificata. Al momento verrà considerato come un processo incrementale dove ad ogni versione verranno aggiunte o migliorate determinate funzionalità:
+The project is currently in a simplified preliminary version. It will be considered an incremental process where features will be added or improved with each version:
 
-### Versione iniziale (v 0.0.1) ☑️
-- Struttura iniziale del progetto
-- Parsing semplificato dei documenti Markdown
-- Implementazione TTS con api di Google TTS
+### Initial version (v 0.0.1) ☑️
 
-### Incremento 1
-- Gestione multilingua dei documenti
+- Initial project structure
+- Simplified parsing of Markdown documents
+- TTS implementation with Google TTS API
+
+### Increment 1
+
+- Multilingual document handling
 - TBD
