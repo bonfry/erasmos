@@ -1,8 +1,8 @@
 # Erasmos
 
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/bonfry/doc_podaster)](https://github.com/bonfry/doc_podaster/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/bonfry/doc_podaster)](https://github.com/bonfry/doc_podaster/blob/main/LICENSE)
-[![GitHub last commit](https://img.shields.io/github/last-commit/bonfry/doc_podaster)](https://github.com/bonfry/doc_podaster/commits/main)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/bonfry/erasmos)](https://github.com/bonfry/erasmos/releases/latest)
+[![GitHub license](https://img.shields.io/github/license/bonfry/erasmos)](https://github.com/bonfry/erasmos/blob/main/LICENSE)
+[![GitHub last commit](https://img.shields.io/github/last-commit/bonfry/erasmos)](https://github.com/bonfry/erasmos/commits/main)
 This project allows you to transform documents into listenable audio tracks. The project is designed to integrate various approaches for document analysis and audio conversion.
 
 ## Installation
@@ -10,7 +10,7 @@ This project allows you to transform documents into listenable audio tracks. The
 Clone the repository
 
 ```bash
-git clone https://github.com/bonfry/doc_podaster.git
+git clone https://github.com/bonfry/erasmos.git
 ```
 
 Install the Python project
