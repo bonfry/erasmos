@@ -3,6 +3,7 @@
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/bonfry/erasmos)](https://github.com/bonfry/erasmos/releases/latest)
 [![GitHub license](https://img.shields.io/github/license/bonfry/erasmos)](https://github.com/bonfry/erasmos/blob/main/LICENSE)
 [![GitHub last commit](https://img.shields.io/github/last-commit/bonfry/erasmos)](https://github.com/bonfry/erasmos/commits/main)
+
 This project allows you to transform documents into listenable audio tracks. The project is designed to integrate various approaches for document analysis and audio conversion.
 
 ## Installation
@@ -61,5 +62,5 @@ The project is currently in a simplified preliminary version. It will be conside
 
 ### Increment 1
 
-- Multilingual document handling
-- TBD
+- Multilingual support
+- Better Markdown nodes parsing
